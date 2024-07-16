@@ -9,10 +9,13 @@ public class CityList {
     public CityList() {
         cities = new ArrayList<>();
 
-        cities.add(new City("New York", 0, 0));
-        cities.add(new City("Los Angeles", 3, 4));
-        cities.add(new City("Chicago", 1, 2));
-        cities.add(new City("Houston", 6, 8));
+        String filepath = "src/cities.csv";
+
+        List<String[]> dataLines = FileRead.readCSV(filepath);
+
+        for (String[] line : dataLines) {
+            cities.add(new City(line[0], line[1], line[2]));
+        }
 
     }
 

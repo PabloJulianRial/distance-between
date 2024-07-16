@@ -5,10 +5,10 @@ public class City {
     private int x;
     private int y;
 
-    public City(String name, int x, int y) {
+    public City(String name, String x, String y) {
         this.name = name;
-        this.x = x;
-        this.y = y;
+        this.x = Integer.parseInt(x.toString());
+        this.y = Integer.parseInt(y.toString());
     }
 
     public String getName() {
