@@ -1,17 +1,13 @@
 package org.example;
 
-import java.util.Scanner;
-
 public class DistanceCalculator {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Input userinput = new Input();
         CityList cityList = new CityList();
 
-        System.out.println("Enter the first city: ");
-        String city1Name = scanner.nextLine();
 
-        System.out.println("Enter the second city: ");
-        String city2Name = scanner.nextLine();
+        String city1Name = userinput.getCityInput("Enter the first city: ");
+        String city2Name = userinput.getCityInput("Enter the second city: ");
 
         City city1 = cityList.findCityByName(city1Name);
         City city2 = cityList.findCityByName(city2Name);

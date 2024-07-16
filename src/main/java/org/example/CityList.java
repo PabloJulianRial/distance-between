@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class CityList {
-    private List<City> cities;
+    private final List<City> cities;
 
     public CityList() {
         cities = new ArrayList<>();
