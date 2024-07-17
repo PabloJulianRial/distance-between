@@ -10,13 +10,11 @@ public class CityList {
         cities = new ArrayList<>();
 
         String filepath = "src/cities.csv";
-
         List<String[]> dataLines = FileRead.readCSV(filepath);
 
         for (String[] line : dataLines) {
             cities.add(new City(line[0], line[1], line[2]));
         }
-
     }
 
     public City findCityByName(String name) {

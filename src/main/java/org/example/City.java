@@ -2,24 +2,24 @@ package org.example;
 
 public class City {
     private String name;
-    private int x;
-    private int y;
+    private double x;
+    private double y;
 
     public City(String name, String x, String y) {
         this.name = name;
-        this.x = Integer.parseInt(x.toString());
-        this.y = Integer.parseInt(y.toString());
+        this.x = Double.parseDouble(x);
+        this.y = Double.parseDouble(y);
     }
 
     public String getName() {
         return name;
     }
 
-    public int getX() {
+    public double getX() {
         return x;
     }
 
-    public int getY() {
+    public double getY() {
         return y;
     }
 }
