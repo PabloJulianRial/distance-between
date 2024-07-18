@@ -17,6 +17,10 @@ public class CityList {
         }
     }
 
+    public List<City> getCities() {
+        return cities;
+    }
+
     public City findCityByName(String name) {
         for (City city : cities) {
             if (city.getName().equalsIgnoreCase(name)) {

@@ -31,5 +31,4 @@ public class DistanceCalculator {
                                 Math.sin(Math.toRadians(y2 - y1) / 2) * Math.sin(Math.toRadians(y2 - y1) / 2)
         ));
     }
-
 }
